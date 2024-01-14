@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choy Real Estate</title>
+    <!-- custome css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="logo" class="w-50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular">Popular</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sales">Recently Sold</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agents">Agents</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#question">Questions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn text-white bg-dark px-3 rounded-0" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero section -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/home6.jpg" class="d-block w-100-height" alt="img1">
+
+                <div class="carousel-caption carousel1">
+                    <p>1 / 3</p>
+                    <h5 class>Your Experts<br> In Real Estate </h5>
+                    <p><a href="#services" class="btn btn-light btn-lg mt-3 rounded-0 text-nowrap">Explore Our Services</a></p>
+                    <!-- Deprecated
+                    <div class="mt-5 d-flex">
+                        <input type="text" class="form-control search w-50 rounded-0" id="floatingInput"
+                            placeholder="Search...">
+
+                        <button class="btn btn-light btn-sm justify-content-md-end mx-2 px-3 rounded-0">
+                            <i class="fas fa-search"></i> Search</button>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/home7.jpg" class="d-block w-100-height" alt="img1">
+
+                <div class="carousel-caption carousel1">
+                    <p>2 / 3</p>
+                    <h5>Buying, Selling, <br> or Renting?</h5>
+                    <p><a href="#services" class="btn btn-light btn-lg mt-3 rounded-0 text-nowrap">Discover More</a></p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/home8.jpg" class="d-block w-100-height" alt="img1">
+
+                <div class="carousel-caption carousel1">
+                    <p>3 / 3</p>
+                    <h5>Check Out <br> What's on the Market</h5>
+                    <p><a href="#popular" class="btn btn-light btn-lg mt-3 rounded-0 text-nowrap">Explore</a></p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="icon">&larr;</span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="icon">&rarr;</span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+
+        <div class="col-md-4 z-1 position-absolute card-bottom card mb-3 card-color rounded-0"
+            style="background: #000;">
+            <div class="row align-items-center">
+
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Here to help!</h5>
+                        <p class="card-text text-light">
+                           With over 20 years of real estate expertise, we turn property aspirations into reality. Check us out today!
+                        </p>
+                        <p class="card-text"><small class="text-white"></small></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="/images/project-3.jpg" class="img-fluid rounded-start" alt="card-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Popular Residence -->
+    <section class="container" style="margin-top: 100px;" id="popular">
+
+        <p class="pt-5">Popular</p>
+        <div class="d-flex">
+            <h2>Currently On The Market</h2>
+            <!-- Inactive 
+            <h6 class="ms-auto">Explore All <span class="arrow-icon">&rarr;</span></h6>
+            -->
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home1.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted"> 2324 Juno Dr, San Leandro CA 94579</p>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bed"></i> 3 bed</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bath"></i> 4 bath</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-ruler-vertical"></i> 2,234 sqft</p>
+                        </div>
+
+                        <div class="d-flex my-2">
+                            <a href="tel:4153496108" class="btn btn-lg text-white bg-dark px-4 rounded-0">Call Now</a>
+                            <h5 class="my-auto ms-auto"> $2,13,048</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home4.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">1518 Pearl St, Alameda CA 94501</p>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bed"></i> 3 bed</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bath"></i> 4 bath</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-ruler-vertical"></i> 2,234 sqft</p>
+                        </div>
+
+                        <div class="d-flex my-2">
+                            <a href="tel:4153496108" class="btn btn-lg text-white bg-dark px-4 rounded-0">Call Now</a>
+                            <h5 class="my-auto ms-auto"> $2,13,048</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home2.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">4043 Tavern Place, Hayward CA 94501</p>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bed"></i> 3 bed</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-bath"></i> 4 bath</p>
+                            <p class="mx-4 text-muted card-text"><i class="fa fa-ruler-vertical"></i> 2,234 sqft</p>
+                        </div>
+
+                        <div class="d-flex my-2">
+                            <a href="tel:4153496108" class="btn btn-lg text-white bg-dark px-4 rounded-0">Call Now</a>
+                            <h5 class="my-auto ms-auto"> $2,13,048</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- dark background and logos + quotes -->
+    <section class="bg-dark" style="margin-top: -15%;">
+
+        <div class="container pt-5">
+            <div class="row" style="margin-top: 25%;">
+                <div class="col-lg-4">
+                    <h2 class="px-3" style="color: #b5b5b5;">Jahn Jamison L. Tibayan</h2>
+                    <p class="px-3" style="color: #b5b5b5;">This text will be changed</p>
+                </div>
+
+                <div class="col-lg-8 mb-5">
+                    <h6 class="lh-lg px-3" style="color: #b5b5b5;"> Lorem, ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Magnam a est voluptatem, excepturi ad vitae laboriosam. Ex ut odio molestiae reprehenderit
+                        magnam dicta rerum, nisi laborum nobis cum ipsam sit veritatis maxime culpa! Nihil molestias
+                        porro quisquam enim aliquam odio iure soluta, perferendis accusamus repudiandae dolores
+                        blanditiis laborum vel quasi?</h6>
+                </div>
+            </div>
+
+            <hr class="text-light">
+
+            <div class="container mt-5 pb-5">
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/logo1.png" alt="logo1" style="width: 55%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Our Services Section -->
+    <section class="about section-padding" style="margin-top: 40px;" id="services">
+
+        <div class="text-center pb-5">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="d-flex">
+                        <div class="about-img mx-2">
+                            <img src="images/about1.png" alt="about-img" class="img-fluid h-100 mt-4">
+                        </div>
+
+                        <div class="about-img">
+                            <img src="images/about2.png" alt="about-img" class="img-fluid h-75">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5" style="margin-top: 40px;">
+                    <div class="about-text px-3">
+                        <h2>Expertise for All Aspects <br> of Your Property Needs</h2>
+                        <p class="mt-5">
+                            <strong>Buying, Selling, or Renting</strong> <br>
+                            Discover a seamless buying and selling experience with our expert real estate agents.
+                            We understand that a home is more than just a property; it's where memories are made. 
+                            Let us guide you through the process, ensuring you find the perfect home or sell yours at the best value.
+                        </p>
+                        <p>
+                            <strong>Remodeling</strong> <br>
+                            Transform your current space into your dream haven with our remodeling services. 
+                            Whether it's a kitchen upgrade, bathroom renovation, or a complete home makeover, 
+                            our skilled team of professionals is ready to bring your vision to life.
+                        </p>
+                        <p class="mb-5">
+                            <strong>Design Services</strong> <br>
+                            Create a home that reflects your style with our personalized design services. 
+                            Our experienced designers will work closely with you to curate a space that not
+                            only meets your functional needs but also resonates with your aesthetic preferences.
+                        </p>
+                        <a href="tel:4153496108" class="btn text-white bg-dark px-3 rounded-0">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Recently Sold section -->
+    <section class="container px-4" style="margin-top: 100px;" id="sales">
+
+        <p class="pt-5">Past Work</p>
+        <div class="d-flex">
+            <h2>Recently Sold</h2>
+            <!-- Inactive
+            <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0">See More</button>
+            -->
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home1.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">1234 St, City CA 94567</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+                            architecto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home4.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">1234 St, City CA 94567</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+                            architecto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 rounded-0">
+                    <img src="images/home2.jpg" class="card-img-top rounded-0" alt="image1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">1234 St, City CA 94567</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+                            architecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Agents section -->
+    <section class="bg-dark" style="margin-top: 100px;" id="agents">
+
+        <div class="container pt-5">
+            <div class="d-flex" style="margin-top: 40px;">
+                <h2 class="text-light px-4">Meet Our Team</h2>
+
+                <div class="ms-auto">
+                    <button class="btn btn-md text-light"><span class="arrow-icon mx-2">&larr;</span></button>
+                    <button class="btn btn-md text-light"><span class="arrow-icon mx-2">&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 mt-3">
+            <div class="card border-0 rounded-0 bg-transparent col-md-8">
+                <div class="row g-0">
+                    <div class="col-md-5 px-3">
+                        <img src="images/team-1.png" class="img-fluid " alt="...">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Annete Jenson</h5>
+                            <p class="card-text">Choy Real Estate</p>
+                            <p class="card-text"><small class="text-light">(510) 460-0915</small></p>
+                            <p class="card-text"><small class="text-light">Real Estate Agent</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 rounded-0 bg-transparent">
+                <div class="row g-0">
+                    <div class="col-md-5 px-3">
+                        <img src="images/team-2.png" class="img-fluid " alt="...">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Jojo Chen</h5>
+                            <p class="card-text">Choy Real Estate</p>
+                            <p class="card-text"><small class="text-light">(626) 988-7838</small></p>
+                            <p class="card-text"><small class="text-light">Real Estate Agent</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card border-0 rounded-0 bg-transparent">
+                <div class="row g-0">
+                    <div class="col-md-5 px-3">
+                        <img src="images/team-3.png" class="img-fluid " alt="...">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">He Shui</h5>
+                            <p class="card-text">Choy Real Estate</p>
+                            <p class="card-text"><small class="text-light">(650) 766-7799</small></p>
+                            <p class="card-text"><small class="text-light">Broker</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- QNA Section -->
+    <section class="about section-padding px-3" style="margin-top: 40px;" id="question">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+                    <div class="about-text">
+                        <p>Questions</p>
+                        <h2>Frequently Asked <br> Questions</h2>
+                        <p>
+                            This text will be changed.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- accordian -->
+                <div class="accordion col-lg-7 mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <!-- info text
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                -->
+                                This text will be changed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                This text will be changed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                This text will be changed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-dark bg-footer px-4" style="margin-top: 80px;" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h5 class="text-light">About Us</h5>
+                    <p class="text-light">This text will be changed.</p>
+                    <p class="text-light"><i class="fa fa-map-pin"></i>
+                        <a href="http://maps.apple.com/maps?q=100+Hegenberger+suite+%23130+Oakland+Ca+94621">
+                            100 Hegenberger suite #130
+                            <br>
+                            Oakland, CA 94621
+                        </a>
+                    </p>
+                    <p class="text-light"><i class="fa fa-phone"></i>
+                        <a href="tel:4153496108">
+                            (415) 349-6108
+                        </a>  
+                    </p>
+                    <p class="text-light"><i class="fa fa-envelope"></i> 
+                        <a href="mailto:kingswealthinc@gmail.com">
+                            kingswealthinc@gmail.com
+                        </a>  
+                    </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-light">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#popular">Popular</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#agents">Agents</a></li>
+                        <li><a href="#sales">Recently Sold</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-light">Stay Connected</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center text-light">
+                        Copyright &copy; 2023 <br> <a href="#">Jahn Jamison L. Tibayan</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
